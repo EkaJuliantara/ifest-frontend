@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adhyaksa Jaya">
+    <meta name="description" content="Informatics Festival - Universitas Atma Jaya Yogyakarta">
+    <title>IFEST #4 - Informatics Festival UAJY</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/fullPage/jquery.fullPage.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/lightbox/css/lightbox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <script type="text/javascript" src="assets/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/fullPage/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+        var isPhoneDevice = "ontouchstart" in document.documentElement;
+        $(document).ready(function() {
+            if (isPhoneDevice || screen.width <= 768) {
+                $('.fullpage').fullpage({
+                    css3: true,
+                    autoScrolling: false,
+                    fitToSection: false
+                });
+            } else {
+                $('.fullpage').fullpage({
+                    css3: true,
+                    menu: 'navigation'
+                });
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        Menu
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav" id="navigation">
+                        <li data-menuanchor="intro" class="col-md-2">
+                            <a href="#intro" class="active"><i class="glyphicon glyphicon-home"></i> Beranda</a>
+                        </li>
+                        <li data-menuanchor="about" class="col-md-2">
+                            <a href="#about"><i class="glyphicon glyphicon-question-sign"></i> Tentang IFEST</a>
+                        </li>
+                        <li data-menuanchor="gallery" class="col-md-2">
+                            <a href="#gallery"><i class="glyphicon glyphicon-picture"></i> Galeri</a>
+                        </li>
+                        <li data-menuanchor="events" class="col-md-2">
+                            <a href="#events"><i class="glyphicon glyphicon-calendar"></i> Event</a>
+                        </li>
+                        <li data-menuanchor="sponsors" class="col-md-2">
+                            <a href="#sponsors"><i class="glyphicon glyphicon-heart"></i> Sponsor</a>
+                        </li>
+                        <li data-menuanchor="contact" class="col-md-2">
+                            <a href="#contact"><i class="glyphicon glyphicon-phone-alt"></i> Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="fullpage">
+        <div class="section intro" data-anchor="intro">
+            <a class="intro-logo">
+                <img src="img/logo-intro.png">
+            </a>
+            <h1 class="intro-title">Informatics Festival #4</h1>
+            <h3 class="intro-desc">Universitas Atma Jaya Yogyakarta</h3>
+        </div>
+        <div class="section about" data-anchor="about">
+            <div class="container">
+                <h2 class="section-title">Tentang IFEST</h2>
+                <p align="center">IFEST atau Informatics Festival adalah festival tahunan dari Himpunan Mahasiswa Teknik Informatika - Universitas Atma Jaya Yogyakarta. Tahun 2016 ini adalah tahun dari IFEST yang keempat dan pada tahun ini mengambil tema <br>"UNLIMITED CREATIVITY".</p>
+            </div>
+        </div>
+        <div class="section gallery" data-anchor="gallery">
+            <div class="slide">
+                <div class="photo pull-left">
+                    <a href="img/gallery-1.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-1.jpg"></a>
+                </div>
+                <div class="photo pull-left">
+                    <a href="img/gallery-2.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-2.jpg"></a>
+                </div>
+                <div class="photo pull-left">
+                    <a href="img/gallery-3.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-3.jpg"></a>
+                </div>
+                <div class="photo pull-left">
+                    <a href="img/gallery-4.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-4.jpg"></a>
+                </div>
+                <div class="photo pull-left">
+                    <a href="img/gallery-5.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-5.jpg"></a>
+                </div>
+                <div class="photo pull-left">
+                    <a href="img/gallery-6.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-6.jpg"></a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="photo pull-left">
+                    <a href="img/gallery-7.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-7.jpg"></a>
+                </div>
+                <div class="photo pull-left">
+                    <a href="img/gallery-8.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-8.jpg"></a>
+                </div>
+                <div class="photo pull-left">
+                    <a href="img/gallery-9.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-9.jpg"></a>
+                </div>
+                <div class="photo pull-left">
+                    <a href="img/gallery-4.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-4.jpg"></a>
+                </div>
+                <div class="photo pull-left">
+                    <a href="img/gallery-5.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-5.jpg"></a>
+                </div>
+                <div class="photo pull-left">
+                    <a href="img/gallery-6.jpg" data-lightbox="ifest-gallery"><img src="img/gallery-6.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="section events" data-anchor="events">
+            <div class="container">
+                <h2 class="section-title" style="text-shadow: none; color: #eee;">Event-event IFEST #4 2016</h2>
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <div class="event">
+                            <a href="http://ifest-uajy.com/seminar">
+                                <div class="splash">
+                                    <span>DETIL</span>
+                                </div>
+                                <img src="img/event-seminar.png">
+                                <h3 class="event-title">Seminar</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <div class="event">
+                            <a href="http://ifest-uajy.com/upc">
+                                <div class="splash">
+                                    <span>DETIL</span>
+                                </div>
+                                <img src="img/event-upc.png">
+                                <h3 class="event-title">UPC 2016</h3>
+                            </a>
+                        </div>
+                    </div>
+              	</div>
+              	<div class="row">
+                    <div class="col-md-4 col-xs-6">
+                        <div class="event">
+                            <a href="http://ifest-uajy.com/i2c">
+                                <div class="splash">
+                                    <span>DETIL</span>
+                                </div>
+                                <img src="img/event-i2c.png">
+                                <h3 class="event-title">I2C 2016</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="event">
+                            <a href="#">
+                                <div class="splash">
+                                    <span>DETIL</span>
+                                </div>
+                                <img src="img/event-ksl.png">
+                                <h3 class="event-title">PNC 2016</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="event">
+                            <a href="#">
+                                <div class="splash">
+                                    <span>DETIL</span>
+                                </div>
+                                <img src="img/event-dota.png">
+                                <h3 class="event-title">Dota2 Competition</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section sponsors" data-anchor="sponsors">
+            <div class="container">
+                <h2 class="section-title">Sponsor IFEST #4 2016</h2>
+                <div class="sponsor-list">
+                    <!-- <img src="img/sponsor-kingston.png">
+                    <img src="img/sponsor-amd.jpg">
+                    <img src="img/sponsor-gigabyte.png">
+                    <img src="img/sponsor-qwords.png">
+                    <img src="img/sponsor-mitrais.jpg">
+                    <img src="img/sponsor-jogja-student.jpg">
+                    <img src="img/sponsor-asc.png">
+                    <img src="img/sponsor-temen.jpg">
+                    <img src="img/sponsor-connect.png"> -->
+                </div>
+            </div>
+        </div>
+        <div class="section contact" data-anchor="contact">
+            <div class="container">
+                <h2 class="section-title" style="text-shadow: none; color: #eee;">Kontak Kami</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <form action="http://regsys.ifest-uajy.com/api/mail/contact" role="form" class="contact-form" method="POST">
+                        	<div class="row">
+                        		<div class="col-md-6">
+		                            <div class="form-group">
+		                                <label>Nama</label>
+		                                <input name="name" class="form-control" type="text" maxlength="40" required/>
+		                            </div>
+		                      	</div>
+                        		<div class="col-md-6">
+		                            <div class="form-group">
+		                                <label>Email</label>
+		                                <input name="email" class="form-control" type="text" maxlength="30" required/>
+		                            </div>
+		                      	</div>
+		              	</div>
+		            <div class="form-group">
+                                <label>Asal (Organisasi/Institusi/Sekolah)</label>
+                                <input name="origin" class="form-control" type="text" maxlength="30" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Pesan</label>
+                                <textarea name="message" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-block btn-lg">Kirim</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-person">
+                            <h3>Contact Persons</h3>
+                            <span><i class="glyphicon glyphicon-earphone"></i> +6285602131300 (Dito)</span>
+                            <span><i class="glyphicon glyphicon-earphone"></i> +6285359997159 (Hery)</span>
+                        </div>
+                        <div class="contact-person">
+                            <h3>Social Media</h3>
+                            <img src="img/instagram-icon.png" width="32px" height="32px" /><a href="https://www.instagram.com/ifestuajy/">ifestuajy</a><br/>
+                            <img src="img/line-icon.png" width="32px" height="32px" />@syq8090v<br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="copyright">Copyright &copy; 2016 <a href="http://himaforka-uajy.org" title="Himaforka UAJY">Himaforka UAJY</a>. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="assets/lightbox/js/lightbox.min.js"></script>
+</body>
+</html>

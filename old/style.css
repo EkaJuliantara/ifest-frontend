@@ -1,0 +1,407 @@
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/webfonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: normal;
+    src: url('assets/webfonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    src: url('assets/webfonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: bold;
+    src: url('assets/webfonts/Roboto-BoldItalic.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* All Section */
+
+.fullpage {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px #111;
+    letter-spacing: 1px;
+    margin: 0 0 30px 0;
+}
+
+.section {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 0.8;
+    word-spacing: 1px;
+    line-height: 32px;
+}
+
+.section p {
+    margin-bottom: 20px;
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 50px;
+    background: #3A5DC7;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.navbar-nav > li,
+.navbar-nav > li a {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .8px;
+}
+
+.navbar-nav > li a {
+    margin-top: -1px;
+    transition: background 0.1s;
+    -moz-transition: background 0.1s;
+    -webkit-transition: background 0.1s;
+}
+
+.navbar-nav > li a i {
+    margin-right: 5px;
+}
+
+.navbar-nav > li a:hover,
+.navbar-nav > li a:active,
+.navbar-nav > li a:focus {
+    background: #6280de;
+}
+
+/* Intro Section */
+
+.intro {
+    background: url('img/section-1-bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.intro-logo {
+    display: block;
+    width: 450px;
+    height: 225px;
+    margin: 0 auto 50px auto;
+}
+
+.intro-title {
+    color: #fdfdfd;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px #111;
+}
+
+.intro-desc {
+    color: #eee;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 1px 1px #111;
+}
+
+/* About Section */
+
+.about {
+    background: #060B2B;
+}
+
+/* Gallery */
+
+.gallery {
+    background: #222;
+}
+
+.gallery .photo {
+    position: relative;
+    width: calc(100% / 3);
+    height: 50%;
+    overflow: hidden;
+}
+
+.gallery .photo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    height: 120%;
+}
+
+/* Events */
+
+.events {
+    background: url('img/section-event-bg.png') #213E7F;
+}
+
+.event {
+    margin-bottom: 20px;
+}
+
+.event a {
+    position: relative;
+    display: block;
+    color: #fff;
+    padding: 20px 0;
+    transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+    -webkit-transition: all ease-in-out 0.2s;
+}
+
+.event a:hover {
+    text-decoration: none;
+}
+
+.event a .splash {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 85%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    line-height: 36px;
+    transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+    -webkit-transition: all ease-in-out 0.2s;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.event a:hover img,
+.event a:hover h3 {
+    opacity: 0.4;
+}
+
+.event a:hover .splash {
+    opacity: 1;
+}
+
+.event a .splash span {
+    line-height: 36px;
+    position: relative;
+    top: calc(50% - 18px);
+}
+
+.event img {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px auto;
+    transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+    -webkit-transition: all ease-in-out 0.2s;
+}
+
+.event-title {
+    font-size: 26px;
+    text-align: center;
+}
+
+/* Sponsors Section */
+
+.sponsors {
+    background: url('img/section-sponsors-bg.png') #fefefe;
+}
+
+.sponsors .section-title {
+    color: #333;
+    text-shadow: 1px 1px #ccc;
+    margin-bottom: 100px;
+}
+
+.sponsor-list {
+    text-align: center;
+}
+
+.sponsor-list img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+
+.contact {
+    background: #112966;
+}
+
+.contact .section-title {
+    margin-top: -20px;
+}
+
+.contact-form label {
+    font-weight: normal;
+    color: #eee;
+    font-size: 16px;
+}
+
+.contact-form input[type="text"].form-control,
+.contact-form textarea.form-control {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 0;
+    height: auto;
+    padding: 5px;
+    font-size: 16px;
+    color: #000;
+}
+
+.contact-form textarea.form-control {
+    height: 150px;
+    padding: 10px;
+}
+
+.contact-person {
+    background: #fdfdfd;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+    color: #444;
+    font-size: 16px;
+    margin: 0 0 25px 0;
+}
+
+.contact-person h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #444;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.contact-person span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-person span:last-child {
+    margin-bottom: 0;
+}
+
+.contact-person span i {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.contact-person img {
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+p.copyright {
+    color: #ddd;
+    text-align: center;
+    font-size: 15px;
+}
+
+p.copyright a {
+	color: inherit;
+}
+
+@media all and (max-width: 768px) {
+    .intro.fp-section,
+    .intro .fp-tableCell {
+        height: 100% !important;
+    }
+
+    .about.fp-section,
+    .about .fp-tableCell,
+    .events.fp-section,
+    .events .fp-tableCell,
+    .sponsors.fp-section,
+    .sponsors .fp-tableCell,
+    .contact.fp-section,
+    .contact .fp-tableCell {
+        height: auto !important;
+    }
+
+    .section {
+        font-size: 16px;
+        padding: 30px 0;
+    }
+
+    .intro-logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro-logo img {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .intro-title {
+        font-size: 36px;
+    }
+
+    .intro-desc {
+        font-size: 28px;
+    }
+
+    .section.gallery {
+        padding: 0;
+    }
+
+    .gallery .photo {
+        width: 50%;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .contact .section-title {
+        margin-top: 0;
+    }
+
+    .contact-person {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section.contact {
+        padding-bottom: 0;
+    }
+}
