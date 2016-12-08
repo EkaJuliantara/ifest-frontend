@@ -2,11 +2,11 @@
   background: #000;
   color: #fff;
   position: relative;
-  padding: 15px 0;
 }
 .logo-box{
   position: relative;
   text-align: center;
+  border: 2px solid #fff;
   height: 52px;
 }
 #logo{
@@ -33,7 +33,7 @@ li.item-nav{
   position: relative;
   background: #000;
   color: #fff;
-  height: 518px;
+  height: 500px;
 }
 .fullwidth{
   width: 100%;
