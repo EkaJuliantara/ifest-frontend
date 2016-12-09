@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -16,9 +16,9 @@ html * {
 
 body {
   font-size: 100%;
-  font-family: "Droid Serif", serif;
-  color: #7f8c97;
-  background-color: #e9f0f5;
+  /* font-family: "Droid Serif", serif; */
+  /* color: #7f8c97; */
+  /* background-color: #e9f0f5; */
 }
 
 a {
@@ -36,7 +36,7 @@ h1, h2 {
   font-weight: bold;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -54,9 +54,9 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 header {
@@ -244,7 +244,7 @@ header h1 {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: white;
+  background: #F2F1EF;
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #d7e4ed;
@@ -317,7 +317,7 @@ header h1 {
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: #F2F1EF;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -338,7 +338,7 @@ header h1 {
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    border-right-color: #f2f1ef;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;

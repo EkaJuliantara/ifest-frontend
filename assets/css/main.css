@@ -1,12 +1,35 @@
+/*  Font
+------------------------------------------*/
+@font-face {
+    font-family: "Lato-Regural";
+    src: url(..\fonts\Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(..\fonts\Lato-Bold.ttf);
+}
+*{
+   font-family: "Lato-Regural",sans-serif;
+}
+
+/*         OTHER
+------------------------------------------------*/
+.vertical-box{display: table;}
+.vertical-item{display: table-cell;vertical-align: middle;}
+
+
+
+/*         HEADER
+------------------------------------------------*/
 #header{
   background: #000;
   color: #fff;
   position: relative;
+  padding: 15px 0;
 }
 .logo-box{
   position: relative;
   text-align: center;
-  border: 2px solid #fff;
   height: 52px;
 }
 #logo{
@@ -26,68 +49,108 @@ li.item-nav{
   margin-bottom: 0;
 }
 
-/*-------------------------------------------------------
-          LOGO IFEST
+/*         LOGO IFEST
 ------------------------------------------------*/
 #content-header{
   position: relative;
   background: #000;
   color: #fff;
-  height: 500px;
 }
-.fullwidth{
-  width: 100%;
-  height: 100%;
-  display: table;
-  position: relative;
-}
-.vertical-box{
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
+
 .logo-ifest{
-  padding: 220px;
-  text-align: center;
+  height: 580px;
+  width: 100%;
   vertical-align: middle;
 }
 
-h1.item
+.logo-ifest h1
 {
   text-align: center;
 }
+/*    CONTENT 2
+-------------------------------------------*/
+section#content-2 {
+    background: #2574A9;
+    color: #fff;
+}
+p.desc {
+    font-size: 13pt;
+    text-align: justify;
+}
+.flexslider {
+    height: 250px;
+    position: relative;
+}
+.box-content {
+    height: 310px;
+    position: relative;
+}
+.title-content-acara
+{
+  text-align: center;
+}
+#content-2 .row {padding: 30px 0;}
+.splash{
+  display: none;
+}
+.item-acara{
+  text-align: center;
+}
 
+/*    ACARA
+-------------------------------------------*/
+section#content-acara {
+    background: #C0392B;
+}
+
+section#content-multievent {
+    border-top: 1px solid #E74C3C;
+    border-bottom: 1px solid #E74C3C;
+    background: #ECECEC;
+}
+.arrow-border {
+  position: relative;
+  top: -29px;
+  left: 90px;
+  height: 0;
+  width: 0;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #ECECEC;
+}
 /*    TIMELINE
 -------------------------------------------*/
-#cd-timeline {
-  position: relative;
-  padding: 2em 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
+.title-timeline {
+    text-align: center;
 }
-#cd-timeline::before {
-  /* this is the vertical line */
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 18px;
-  height: 100%;
-  width: 4px;
-  background: #d7e4ed;
+.cd-box1{
+  background: #C0392B;
 }
-
+.cd-box2{
+  background: #2574A9;
+}
+.cd-box3{
+  background: #545e69;
+}
 
 h1.title{
   text-align: center;
 }
 
+/*    SPONSOR
+-------------------------------------------*/
+.item-sponsor {
+    text-align: center;
+}
 
-
-
+.item-sponsor img {
+    display: block;
+}
+/*    MAP
+-------------------------------------------*/
 #map {
   height: 100%;
 }
-      /* Optional: Makes the sample page fill the window. */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -95,5 +158,56 @@ html, body {
 }
 #content-map
 {
-  height: 750px;
+  height: 250px;
+}
+/*  CONTACT US
+----------------------------------------------*/
+
+.title-contact {
+    text-align: center;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    border: none;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #33C3F0;
+}
+.box-contact li {
+    list-style: none;
+}
+i.icon-contact {
+    margin-right: 15px;
+}
+
+.box-contact {
+    border-radius: 10px;
+    background: #F2F1EF;
+    padding: 20px 30px;
+    margin-bottom: 4%;
+}
+
+.box-contact h3 {}
+
+span.title-boxcp {
+    font-size: 25pt;
+}
+.title-boxcp {
+    border-bottom: 1px solid #6C7A89;
+    margin-bottom: 15px;
+}
+.box-form-content {font-size: 11pt;}
+.title-boxcp span {
+    font-size: 19pt;
+    font-family: "Lato",sans-serif;
+}
+
+.box-contact ul li {
+    font-size: 12pt;
+}
+
+.box-contact ul {
+    margin-bottom: 0;
 }
