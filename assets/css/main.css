@@ -84,6 +84,8 @@ p.desc {
 .box-content {
     height: 310px;
     position: relative;
+    align-items: center;
+    display: flex;
 }
 .title-content-acara
 {
