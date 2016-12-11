@@ -59,6 +59,7 @@ li.item-nav{
   position: relative;
   background: #0a1a2e;
   color: #fff;
+  /* padding: 60px 0; */
 }
 
 .logo-ifest{
@@ -66,6 +67,10 @@ li.item-nav{
   width: 100%;
   display: flex;
   align-items: center;
+}
+.logo-content {
+    height: 500px;
+    margin: 0 auto;
 }
 
 .logo-ifest h1
@@ -121,18 +126,40 @@ section#content-multievent {
     /* border-top: 3px solid #8ccdbc; */
     border-bottom: 3px solid #8ccdbc;
     background: #bf3b2b;
+    padding-bottom: 20px;
 }
 .arrow-border {
   position: relative;
-  top: -30px;
-  left: 90px;
+  top: -50px;
+  left: 80px;
   height: 0;
   width: 0;
-  border: 15px solid transparent;
-  border-bottom: 15px solid #bf3b2b;
+  border: 25px solid transparent;
+  border-bottom: 25px solid #bf3b2b;
+}
+.item-acara h4 {
+    font-size: 20pt;
+    margin-bottom: 0;
+}
+
+.img-acara {
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+img {
+    height: 100%;
 }
 /*    TIMELINE
 -------------------------------------------*/
+div#cd-timeline {
+    font-size: 100% !important;
+}
+section#content-timeline {
+    padding: 30px 0;
+    font-size: 100% !important;
+    background: #fae0a4;
+}
 .title-timeline {
     text-align: center;
 }
@@ -148,9 +175,10 @@ section#content-multievent {
 
 h1.title{
   text-align: center;
+  letter-spacing: 0;
 }
 .content-box {
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 /*    SPONSOR
