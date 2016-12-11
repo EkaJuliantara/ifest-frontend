@@ -85,6 +85,9 @@ li.item-nav{
 section#content-2 {
     background: #bf3b2b;
     color: #fff;
+    height: 500px;
+    display: flex;
+    align-items: center;
 }
 p.desc {
     font-size: 13pt;
