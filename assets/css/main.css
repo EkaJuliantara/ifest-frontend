@@ -1,15 +1,19 @@
 /*  Font
 ------------------------------------------*/
 @font-face {
-    font-family: "Lato-Regural";
-    src: url(..\fonts\Lato-Regular.ttf);
+    font-family: "BebasNeue";
+    src: url(..\fonts\BebasNeue Regular.ttf);
 }
 @font-face {
-    font-family: "Lato-Bold";
-    src: url(..\fonts\Lato-Bold.ttf);
+    font-family: "CaviarDreams";
+    src: url(..\fonts\CaviarDreams.ttf);
 }
-*{
-   font-family: "Lato-Regural",sans-serif;
+
+h1,h2,h3{
+   font-family: "BebasNeue",sans-serif;
+}
+p,span,li,label{
+   font-family: "CaviarDreams",sans-serif;
 }
 
 /*         OTHER
@@ -22,7 +26,7 @@
 /*         HEADER
 ------------------------------------------------*/
 #header{
-  background: #000;
+  background: #0a1a2e;
   color: #fff;
   position: relative;
   padding: 15px 0;
@@ -53,24 +57,28 @@ li.item-nav{
 ------------------------------------------------*/
 #content-header{
   position: relative;
-  background: #000;
+  background: #0a1a2e;
   color: #fff;
 }
 
 .logo-ifest{
   height: 580px;
   width: 100%;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }
 
 .logo-ifest h1
 {
   text-align: center;
 }
+.text{
+  width: 100%;
+}
 /*    CONTENT 2
 -------------------------------------------*/
 section#content-2 {
-    background: #2574A9;
+    background: #bf3b2b;
     color: #fff;
 }
 p.desc {
@@ -102,22 +110,26 @@ p.desc {
 /*    ACARA
 -------------------------------------------*/
 section#content-acara {
-    background: #C0392B;
+    background: #0a1a2e;
+    border-top: 2px solid #fae0a4;
+    padding: 30px 0;
+    color: #fff;
+    border-bottom: 2px solid #bf3b2b;
 }
 
 section#content-multievent {
-    border-top: 1px solid #E74C3C;
-    border-bottom: 1px solid #E74C3C;
-    background: #ECECEC;
+    /* border-top: 3px solid #8ccdbc; */
+    border-bottom: 3px solid #8ccdbc;
+    background: #bf3b2b;
 }
 .arrow-border {
   position: relative;
-  top: -29px;
+  top: -30px;
   left: 90px;
   height: 0;
   width: 0;
   border: 15px solid transparent;
-  border-bottom: 15px solid #ECECEC;
+  border-bottom: 15px solid #bf3b2b;
 }
 /*    TIMELINE
 -------------------------------------------*/
@@ -136,6 +148,9 @@ section#content-multievent {
 
 h1.title{
   text-align: center;
+}
+.content-box {
+    padding-top: 30px;
 }
 
 /*    SPONSOR
