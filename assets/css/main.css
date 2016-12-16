@@ -131,8 +131,9 @@ p.desc {
 p.flex-caption {
     padding: 15px;
     position: relative;
-    top: -67px;
+    top: -58px;
     background: rgba(0,0,0,0.3);
+    font-size: 13pt;
 }
 /*    ACARA
 -------------------------------------------*/
@@ -186,6 +187,9 @@ img {
     background: #bf3b2b;
     border-radius: 5pt;
 }
+.img-acara img {
+    height: 100%;
+}
 /*    TIMELINE
 -------------------------------------------*/
 div#cd-timeline {
@@ -194,7 +198,7 @@ div#cd-timeline {
 section#content-timeline {
     padding: 30px 0;
     font-size: 100% !important;
-    background: #fae0a4;
+    background: rgb(230, 128, 37);
 }
 .title-timeline {
     text-align: center;
@@ -233,7 +237,6 @@ h1.title{
 .item-sponsor img {
     display: block;
     margin: 0 auto;
-    /* height: 40%; */
 }
 section#content-sponsor {
     padding: 60px 0;
@@ -295,7 +298,7 @@ i.icon-contact {
 
 .box-contact {
     border-radius: 10px;
-    background: #F2F1EF;
+    background: #8ccdbc;
     padding: 20px 30px;
     margin-bottom: 4%;
 }

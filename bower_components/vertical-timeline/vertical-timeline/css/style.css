@@ -23,6 +23,7 @@ body {
 
 a {
   color: #acb7c0;
+  display: block;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
@@ -247,10 +248,10 @@ header h1 {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #F2F1EF;
+  background: #8CCDBC;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
+  box-shadow: -7px 7px 20px #911A45;
 }
 .cd-timeline-content:after {
   content: "";
@@ -320,7 +321,7 @@ header h1 {
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: #F2F1EF;
+    border-left-color: #8CCDBC;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -335,6 +336,7 @@ header h1 {
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
+    box-shadow: 7px 7px 20px #911A45 !important;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
     top: 24px;
