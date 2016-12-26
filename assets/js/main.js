@@ -5,7 +5,7 @@ $(document).ready(function(){
   });
 
   //ScrollReveal
-  window.sr = ScrollReveal().reveal('section .container',{ reset: true });
+  window.sr = ScrollReveal().reveal('#content-header,#content-acara,#acara-top,#acara-bottom,#content-timeline,#content-sponsor,#sponsor-bottom,#content-map,#content-cp',{ reset: true });
 
 
 

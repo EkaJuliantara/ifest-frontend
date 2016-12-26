@@ -132,8 +132,8 @@ p.desc {
 }
 p.flex-caption {
     padding: 15px;
-    position: relative;
     top: -58px;
+    position: relative;
     background: rgba(0,0,0,0.3);
     font-size: 13pt;
 }
