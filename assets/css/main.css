@@ -18,6 +18,23 @@ p,span,li,label{
 
 /*         OTHER
 ------------------------------------------------*/
+.cp-icons:before{
+  background: url('../img/line.png') no-repeat;
+  background-size: 30px 30px;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  content:"";
+}
+.cp-icons{
+  top: 8px;
+  position: relative;
+  display: inline-block;
+}
+.caption-icons{
+  display: inline-block;
+  font-size: 120%;
+}
 hr{
   margin: 0;
 }
@@ -85,6 +102,9 @@ li.item-nav{
     height: 500px;
     margin: 0 auto;
 }
+.logo-content img{
+    height: 100%;
+}
 
 .logo-ifest h1
 {
@@ -132,10 +152,11 @@ p.desc {
 }
 p.flex-caption {
     padding: 15px;
-    top: -58px;
+    top: -49px;
     position: relative;
     background: rgba(0,0,0,0.3);
     font-size: 13pt;
+    width: 100%;
 }
 /*    ACARA
 -------------------------------------------*/
@@ -336,15 +357,13 @@ span.title-boxcp {
 
 /*  MoBILE
 ----------------------------------------------*/
-@media only screen and (min-width: 740px) {
-  .logo-content img {
-     height: 100%;
-  }
-}
 @media only screen and (max-width: 550px) {
   h2{
     font-size: 18pt !important;
     margin-bottom: 20px !important;
+  }
+  .logo-content img {
+     width: 100%;
   }
   /*       HEADER
   ---------------------------*/
@@ -395,6 +414,42 @@ span.title-boxcp {
   #acara-top{
     zoom: 0.9;
   }
+}
 
+/* Larger than tablet */
+@media only screen and (max-width: 750px) {
+  .logo-content img {
+     height: 100%;
+  }
 
+  .five.columns{
+    width: 100% !important;
+  }
+  .img-acara img{
+    margin: 15px 0;
+  }
+}
+
+/* Larger than desktop */
+@media only screen and (max-width: 1000px) {
+  .title-boxcp span{
+    font-size: 12pt;
+  }
+  .flexslider{
+    display: none;
+  }
+  .box-contact ul li{
+    font-size: 8pt;
+  }
+  .five.columns{
+    width: 100% !important;
+  }
+}
+
+/* Larger than Desktop HD */
+@media only screen and (max-width: 1200px) {
+  .flexslider{
+    margin: 40px 0;
+    height: 312px;
+  }
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 
+
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -11,21 +12,33 @@
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style type="text/css">
+  .flex-caption {
+    width: 96%;
+    padding: 2%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    font-size: 14px;
+    line-height: 18px;
+  }
+</style>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="bower_components\font-awesome\css\font-awesome.min.css">
+
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="bower_components\flexslider\flexslider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="assets\css\main.css">
   <link rel="stylesheet" href="skeleton-custom\css\normalize.css">
   <link rel="stylesheet" href="skeleton-custom\css\skeleton.css">
-  <link rel="stylesheet" href="assets\css\main.css">
-
-  <link rel="stylesheet" href="bower_components\flexslider\flexslider.css">
   <link rel="stylesheet" href="bower_components\vertical-timeline\vertical-timeline\css\style.css">
 
   <!-- JS
@@ -34,13 +47,16 @@
   <script src="bower_components\flexslider\jquery.flexslider-min.js"></script>
   <script src="bower_components\vertical-timeline\vertical-timeline\js\main.js"></script>
   <script src="bower_components\vertical-timeline\vertical-timeline\js\modernizr.js"></script>
-  <!-- <script src="bower_components\scrollreveal\dist\scrollreveal.min.js"></script> -->
+  <script src="bower_components\scrollreveal\dist\scrollreveal.min.js"></script>
   <script src="bower_components\smooth-scroll\dist\js\smooth-scroll.min.js"></script>
   <script src="assets\js\main.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="bower_components\font-awesome\css\font-awesome.min.css">
 
 </head>
 
@@ -102,27 +118,27 @@
           <div class="flexslider">
             <ul class="slides">
               <li>
-                <img class="img-slider" src="gallery\DSC_0098.JPG" />
-                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+                <img class="img-slider" src="gallery\IMG_0237.JPG" />
+                <p class="flex-caption">SEMINAR NASIONAL</p>
               </li>
               <li>
                 <img class="img-slider" src="gallery\DSC_0196.JPG" />
-                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+                <p class="flex-caption">Uajy Programming Competition</p>
               </li>
               <li>
                 <img class="img-slider" src="gallery\DSC_0638.JPG" />
-                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+                <p class="flex-caption">BAZZAR & EXPO</p>
               </li>
               <li>
                 <img class="img-slider" src="gallery\DSC_0852.JPG" />
-                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+                <p class="flex-caption">DOTA 2 COMPETITION</p>
               </li>
             </ul>
           </div>
         </div>
         <div class="five columns">
-          <div class="box-content vertical-box">
-            <div class="item-box vertical-item">
+          <div class="box-content">
+            <div class="item-box">
               <h1 class="title">Apa itu IFEST ? </h1>
               <p class="desc">
                 IFEST atau Informatics Festival adalah festival tahunan dari Himpunan Mahasiswa Teknik Informatika - Universitas Atma Jaya Yogyakarta. Tahun 2016 ini adalah tahun dari IFEST yang keempat dan pada tahun ini mengambil tema
@@ -285,7 +301,7 @@
         <div class="cd-timeline-content">
           <h2>SEMINAR NASIONAL</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-          <a href="#0" class="btn-cp cd-read-more">Read more</a>
+          <!-- <a href="#0" class="btn-cp cd-read-more">Read more</a> -->
           <span class="cd-date">06 Mei 2017</span>
         </div> <!-- cd-timeline-content -->
 
@@ -298,7 +314,7 @@
         <div class="cd-timeline-content">
           <h2>I2C AWARD</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-          <a href="#0" class="btn-cp cd-read-more">Read more</a>
+          <!-- <a href="#0" class="btn-cp cd-read-more">Read more</a> -->
           <span class="cd-date">10 Mei 2017</span>
         </div> <!-- cd-timeline-content -->
 
@@ -311,7 +327,7 @@
         <div class="cd-timeline-content">
           <h2>uajy programming competition</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-          <a href="#0" class="btn-cp cd-read-more">Read more</a>
+          <!-- <a href="#0" class="btn-cp cd-read-more">Read more</a> -->
           <span class="cd-date">12-13 Mei 2017</span>
         </div> <!-- cd-timeline-content -->
 
@@ -324,7 +340,7 @@
         <div class="cd-timeline-content">
           <h2>BAZZAR & EXPO</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-          <a href="#0" class="btn-cp cd-read-more">Read more</a>
+          <!-- <a href="#0" class="btn-cp cd-read-more">Read more</a> -->
           <span class="cd-date">17-21 Mei 2017</span>
         </div> <!-- cd-timeline-content -->
 
@@ -337,7 +353,7 @@
         <div class="cd-timeline-content">
           <h2>DONOR DARAH</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-          <a href="#0" class="btn-cp cd-read-more">Read more</a>
+          <!-- <a href="#0" class="btn-cp cd-read-more">Read more</a> -->
           <span class="cd-date">19 Mei 2017</span>
         </div> <!-- cd-timeline-content -->
 
@@ -350,7 +366,7 @@
         <div class="cd-timeline-content">
           <h2>DOTA 2 COMPETITION</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-          <a href="#0" class="btn-cp cd-read-more">Read more</a>
+          <!-- <a href="#0" class="btn-cp cd-read-more">Read more</a> -->
           <span class="cd-date">20-21 Mei 2017</span>
         </div> <!-- cd-timeline-content -->
 
@@ -415,11 +431,11 @@
           <ul>
             <li>
               <i class="icon-contact fa fa-phone"></i>
-              <span>+628123456789 (Andreas)</span>
+              <span>+62 817 5066 108 (Andreas)</span>
             </li>
             <li>
               <i class="icon-contact fa fa-phone"></i>
-              <span>+628123456789 (Andreas)</span>
+              <span>+62 878 3992 2155 (Dio)</span>
             </li>
           </ul>
         </div>
@@ -429,15 +445,11 @@
           </div>
           <ul>
             <li>
-              <a href="#">
-                <i class="icon-contact fa fa-instagram"></i>
-                <span>Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="icon-contact fa fa-youtube-play"></i>
-                <span>Youtube</span>
+              <a href="http://line.me/ti/p/~@ykb1847q">
+                <i class="icon-contact fa cp-icons"></i>
+                <div class="caption-icons">
+                  <span>Line</span>
+                </div>
               </a>
             </li>
           </ul>
@@ -453,5 +465,7 @@
 </div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
 </body>
 </html>

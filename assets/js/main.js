@@ -1,9 +1,17 @@
 $(document).ready(function(){
 
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-
+  // $('.flexslider').flexslider({
+  //   animation: "slide"
+  // });
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
   //ScrollReveal
   window.sr = ScrollReveal({ reset: true });
   sr.reveal('#content-header');
