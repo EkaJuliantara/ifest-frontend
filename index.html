@@ -34,7 +34,8 @@
   <script src="bower_components\flexslider\jquery.flexslider-min.js"></script>
   <script src="bower_components\vertical-timeline\vertical-timeline\js\main.js"></script>
   <script src="bower_components\vertical-timeline\vertical-timeline\js\modernizr.js"></script>
-  <script src="bower_components\scrollreveal\dist\scrollreveal.min.js"></script>
+  <!-- <script src="bower_components\scrollreveal\dist\scrollreveal.min.js"></script> -->
+  <script src="bower_components\smooth-scroll\dist\js\smooth-scroll.min.js"></script>
   <script src="assets\js\main.js"></script>
 
   <!-- Favicon
@@ -46,7 +47,7 @@
 <body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <section id="header">
+  <section data-scroll-header id="header">
     <div class="container">
       <div class="row">
         <div class="two columns">
@@ -58,27 +59,22 @@
           <div class="navbar">
             <ul class="navbar-box">
               <li class="item-nav">
-                <a href="#">
+                <a data-scroll href="#content-2">
                   Beranda
                 </a>
               </li>
               <li class="item-nav">
-                <a href="#">
+                <a data-scroll href="#content-acara">
                   Acara
                 </a>
               </li>
               <li class="item-nav">
-                <a href="#">
+                <a data-scroll href="#content-timeline">
                   Jadwal
                 </a>
               </li>
               <li class="item-nav">
-                <a href="#">
-                  Sponsor
-                </a>
-              </li>
-              <li class="item-nav">
-                <a href="#">
+                <a data-scroll href="#content-cp">
                   Kontak Kami
                 </a>
               </li>
@@ -295,7 +291,7 @@
 
       </div> <!-- cd-timeline-block -->
       <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-box2">
+        <div class="cd-timeline-img cd-box1">
           <img src="assets/img/timeline/i2c.png" alt="Picture">
         </div> <!-- cd-timeline-img -->
 
@@ -322,7 +318,7 @@
       </div> <!-- cd-timeline-block -->
       <div class="cd-timeline-block">
         <div class="cd-timeline-img cd-box1">
-          <img src="assets/img/timeline/market.png" alt="Picture">
+          <img src="assets/img/food.png" alt="Picture">
         </div> <!-- cd-timeline-img -->
 
         <div class="cd-timeline-content">
@@ -362,151 +358,16 @@
     </div>
   </div>
 </section>
-<section id="content-sponsor">
+<!-- <section id="content-sponsor">
   <section id="sponsor-top">
     <div class="box-sponsor">
       <div class="title-box">
         <h1 class="title">Sponsor IFEST #5 2017</h1>
       </div>
-      <div class="box-sponsor">
-        <div class="container">
-          <div class="row">
-            <div class="six columns">
-              <div class="item-sponsor gold">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-gold-qwords.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="six columns">
-              <div class="item-sponsor gold">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-gold-youngs-computer.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="three columns">
-              <div class="item-sponsor silver">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-bronze-malaka.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="three columns">
-              <div class="item-sponsor silver">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-silver-alnect.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="three columns">
-              <div class="item-sponsor silver">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-silver-infinix.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="three columns">
-              <div class="item-sponsor silver">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-bronze-ayam-muntu.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="two columns">
-              <div class="item-sponsor bronze">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-bronze-andi-offset.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="two columns">
-              <div class="item-sponsor bronze">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-bronze-ayam-muntu.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="two columns">
-              <div class="item-sponsor bronze">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-bronze-malaka.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="two columns">
-              <div class="item-sponsor bronze">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-silver-gameloft.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="two columns">
-              <div class="item-sponsor bronze">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-gold-qwords.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="two columns">
-              <div class="item-sponsor bronze">
-                <div class="item-img">
-                  <img src="logo-acara.new\sponsor-silver-gameloft.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h2 class="comingsoon" >COMING SOON</h2>
     </div>
   </section>
-  <section id="sponsor-bottom">
-    <div class="container">
-      <div class="box-sponsor">
-        <div class="title-box">
-          <h1 class="title">MEDIA PARTNER</h1>
-        </div>
-        <div class="row">
-          <div class="two columns">
-            <div class="item-sponsor media-partner">
-              <img src="#" alt="" />
-            </div>
-          </div>
-          <div class="two columns">
-            <div class="item-sponsor media-partner">
-              <img src="#" alt="" />
-            </div>
-          </div>
-          <div class="two columns">
-            <div class="item-sponsor media-partner">
-              <img src="#" alt="" />
-            </div>
-          </div>
-          <div class="two columns">
-            <div class="item-sponsor media-partner">
-              <img src="#" alt="" />
-            </div>
-          </div>
-          <div class="two columns">
-            <div class="item-sponsor media-partner">
-              <img src="#" alt="" />
-            </div>
-          </div>
-          <div class="two columns">
-            <div class="item-sponsor media-partner">
-              <img src="#" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</section>
+</section> -->
 <section id="content-map">
     <iframe id="map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Universitas%20Atma%20Jaya%20Yogyakarta%2C%20Kampus%203%20Gedung%20Bonaventura%20Babarsari&key=AIzaSyA99mTMcZavwOuy-EEHOaQefqMpqd71BjQ" allowfullscreen></iframe>
 </section>

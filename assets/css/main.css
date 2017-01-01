@@ -50,7 +50,7 @@ body
   height: 100%;
 }
 .logo-content img {
-    height: 100%;
+    min-width: 100%;
 }
 ul.navbar-box{
   position: relative;
@@ -197,6 +197,9 @@ img {
 div#cd-timeline {
     font-size: 100% !important;
 }
+div#cd-timeline p{
+    text-align: justify;
+}
 section#content-timeline {
     padding: 30px 0;
     font-size: 100% !important;
@@ -228,38 +231,12 @@ h1.title{
 
 /*    SPONSOR
 -------------------------------------------*/
-.item-sponsor {
-    text-align: center;
-    border-radius: 100%;
-    /* border: 1px solid; */
+#sponsor-top{
+  padding: 15px 0;
+  background: #8ccdbc;
 }
-.item-img {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-.item-sponsor img {
-    display: block;
-    margin: 0 auto;
-}
-section#content-sponsor {
-    /* padding: 60px 0; */
-    color: #fff;
-}
-.gold {
-    height: 377px;
-}
-
-.silver {
-    height: 200px;
-}
-
-.bronze {
-    height: 120px;
-}
-.media-partner {
-    height: 120px;
+.comingsoon{
+  text-align: center;
 }
 /*    MAP
 -------------------------------------------*/
@@ -353,4 +330,71 @@ span.title-boxcp {
   background: #fae0a4;
   text-align: center;
   font-size: 12pt;
+}
+
+
+
+/*  MoBILE
+----------------------------------------------*/
+@media only screen and (min-width: 740px) {
+  .logo-content img {
+     height: 100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  h2{
+    font-size: 18pt !important;
+    margin-bottom: 20px !important;
+  }
+  /*       HEADER
+  ---------------------------*/
+  #header{
+    background: rgb(10, 26, 46);
+    color: #fff;
+    position: relative;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 1;
+  }
+  #content-header{
+    height: auto;
+    padding: 0;
+    position: relative;
+  }
+  .logo-ifest{
+    height: 500px;
+  }
+  .logo-content {
+      height: auto;
+  }
+  .flexslider{
+    display: none;
+  }
+  .box-logo{
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+  }
+  .navbar{
+    display: none;
+  }
+  /*    CONTENT 2
+  -------------------------------------------*/
+  section#content-2 {
+      background: #bf3b2b;
+      color: #fff;
+      height: auto;
+      display: flex;
+      align-items: center;
+  }
+  p.desc {
+      font-size: 12pt;
+      text-align: justify;
+      letter-spacing: 0.3pt;
+  }
+  #acara-top{
+    zoom: 0.9;
+  }
+
+
 }

@@ -251,7 +251,7 @@ header h1 {
   background: #8CCDBC;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: -7px 7px 20px #911A45;
+  /* box-shadow: -7px 7px 20px #911A45; */
 }
 .cd-timeline-content:after {
   content: "";
@@ -295,7 +295,7 @@ header h1 {
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid white;
+  border-right: 7px solid #8ccdbc;
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -336,14 +336,14 @@ header h1 {
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
-    box-shadow: 7px 7px 20px #911A45 !important;
+    /* box-shadow: 7px 7px 20px #911A45 !important; */
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
     top: 24px;
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: #f2f1ef;
+    border-right-color: #8ccdbc;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;

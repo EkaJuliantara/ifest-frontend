@@ -6,7 +6,7 @@ $(document).ready(function(){
   var pt = (($(window).height() - $('#content .container').height()) / 3);
   $('.container').css({'padding-top':pt});
 
-  $('#clock').countdown('2016/12/31', function(event) {
+  $('#clock').countdown('2017/01/01', function(event) {
     var $this = $(this).html(event.strftime(''
     + '<div class="box-time"><div class="item-time">%d</div> HARI </div>'
     + '<div class="box-time"><div class="item-time">%H</div> JAM </div>'
