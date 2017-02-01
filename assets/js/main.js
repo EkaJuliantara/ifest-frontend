@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-  // $('.flexslider').flexslider({
-  //   animation: "slide"
-  // });
+  // // $('.flexslider').flexslider({
+  // //   animation: "slide"
+  // // });
     $(function(){
       SyntaxHighlighter.all();
     });
