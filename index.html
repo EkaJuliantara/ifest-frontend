@@ -59,19 +59,25 @@
   contactApp.controller("contactCtrl", function($scope, $http) {
 
     $scope.formData = {};
+    $scope.button = "KIRIM";
 
     $scope.contactSubmit = function () {
+
+      $scope.button = "MENGIRIM..."
+
       $http({
         method  : 'POST',
         url     : 'http://api.ifest-uajy.com/v1/contact',
         data    : $.param($scope.formData),
-        headers : { 'Access-Control-Allow-Origin': '*' }
+        headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
        })
       .then(function(data) {
-        $scope.myTxt = "Berhasil";
+        $scope.notif = "Pesan berhasil terkirim.";
+        $scope.button = "KIRIM";
       },
       function(data) {
-        $scope.myTxt = "Gagal";
+        $scope.notif = "Pesan gagal terkirim.";
+        $scope.button = "KIRIM";
       });
     }
 
@@ -452,33 +458,33 @@
               <div class="row">
                 <div class="one-half column">
                   <label>Nama</label>
-                  <input name="full_name" type="text" required>
+                  <input ng-model="formData.full_name" name="full_name" type="text" required>
                 </div>
                 <div class="one-half column">
                   <label>Email</label>
-                  <input name="email" type="text" required>
+                  <input ng-model="formData.email" name="email" type="text" required>
                 </div>
               </div>
               <div class="form-group">
                 <label>Asal (Organisasi/Institusi/Sekolah)</label>
-                <input name="institution" type="text" required>
+                <input ng-model="formData.institution" name="institution" type="text" required>
               </div>
               <div class="form-group">
                 <label>Subject</label>
-                <input name="subject" type="text" required>
+                <input ng-model="formData.subject" name="subject" type="text" required>
               </div>
               <div class="form-group">
                 <label>Pesan</label>
-                <textarea name="message"></textarea>
+                <textarea ng-model="formData.message" name="message"></textarea>
               </div>
               <div class="form-group">
                 <!--<div class="g-recaptcha" data-sitekey="6LeGohMUAAAAAAAulJycmhYrxxcoE-uWSlJhxYYY"></div>-->
               </div>
               <div class="form-group">
-                <button class="btn-cp" type="submit" name="button">Kirim</button>
+                <button class="btn-cp" type="submit" name="button">{{button}}</button>
               </div>
             </form>
-            <p>{{myTxt}}</p>
+            <p>{{notif}}</p>
           </div>
 
         </div>
