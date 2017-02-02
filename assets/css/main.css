@@ -303,7 +303,7 @@ section#content-cp {
     text-align: center;
 }
 
-input[type="text"], textarea {
+input[type="text"], textarea , input[type="email"] {
     width: 100%;
     border: none;
     font-family: "CaviarDreams",sans-serif;
