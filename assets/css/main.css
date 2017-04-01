@@ -1,4 +1,4 @@
-/*  Font
+  Font
 ------------------------------------------*/
 @font-face {
     font-family: "BebasNeue";
@@ -165,6 +165,9 @@ p.desc {
 .item-acara{
   text-align: center;
 }
+.item-acara a:hover h4{
+  color: #0FA0CE;
+}
 .img-slider{
   width: 536px;
 }
@@ -270,13 +273,36 @@ h1.title{
 
 /*    SPONSOR
 -------------------------------------------*/
-#sponsor-top{
-  padding: 15px 0;
-  background: #8ccdbc;
+#content-sponsor{
+  background: rgba(0,0,0,0.5);
+  padding:30px 0;
 }
-.comingsoon{
+#sponsor-top{
+  margin-bottom: : 5px;
+  color: #bf3b2b;
+}
+.sponsor-items{
+  margin: 15px auto;
+}
+.sponsor-item{
+  color: #fff;
+  background: #000;
   text-align: center;
 }
+.sponsor-item img{
+  vertical-align: middle;
+}
+.gold.column{ 
+  width: 30.6666666667%;  /*Bagi 3*/
+}               
+.silver.column.box-test{        
+  width: 16.6666667%;     /*Bagi 5*/
+  margin-left: 4.1666667%;
+}                      
+.bronze.column{
+  width: 10.625%;         /*Bagi 7*/
+  margin-left: 4.2708333%;
+}      
 /*    MAP
 -------------------------------------------*/
 #map {
