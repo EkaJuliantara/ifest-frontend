@@ -274,35 +274,50 @@ h1.title{
 /*    SPONSOR
 -------------------------------------------*/
 #content-sponsor{
-  background: rgba(0,0,0,0.5);
-  padding:30px 0;
+  background: #fff;
+  padding:15px 0 60px;
 }
 #sponsor-top{
   margin-bottom: : 5px;
   color: #bf3b2b;
 }
 .sponsor-items{
+  text-align: center;
+}
+.sponsor-item{
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+/*.sponsor-items{
   margin: 15px auto;
+
 }
 .sponsor-item{
   color: #fff;
-  background: #000;
   text-align: center;
+  vertical-align: middle;
+  margin-bottom: 15px;
 }
+*/
 .sponsor-item img{
   vertical-align: middle;
+  max-height: 102px;
 }
-.gold.column{ 
-  width: 30.6666666667%;  /*Bagi 3*/
-}               
-.silver.column.box-test{        
-  width: 16.6666667%;     /*Bagi 5*/
+
+.gold{ 
+  max-width: 30.6666666667%;
+  margin-left: 4%;
+}   
+       
+.silver{        
+  max-width: 16.6666667%;     
   margin-left: 4.1666667%;
 }                      
-.bronze.column{
-  width: 10.625%;         /*Bagi 7*/
+.bronze{
+  max-width: 10.625%;        
   margin-left: 4.2708333%;
-}      
+}    
 /*    MAP
 -------------------------------------------*/
 #map {
