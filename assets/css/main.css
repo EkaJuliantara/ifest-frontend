@@ -283,6 +283,7 @@ h1.title{
 }
 .sponsor-items{
   text-align: center;
+  margin-bottom: 30px;
 }
 .sponsor-item{
   display: inline-block;
